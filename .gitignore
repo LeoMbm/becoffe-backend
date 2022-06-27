@@ -2,10 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+django_env/
 # C extensions
 *.so
-
+db.sqlite3
 # Distribution / packaging
 .Python
 build/
