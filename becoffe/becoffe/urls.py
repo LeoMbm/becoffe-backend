@@ -17,7 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from listings import views
 
+from django.urls import re_path as url
+from django.urls import include
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.hello),
+    path('api/users', views.users),
+    path('api/promo', views.promo),
+    path('api/recipe', views.recipe),
+    url(r'^', include('listings.urls'))
 ]
